@@ -1,0 +1,41 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Agregar Usuario</h3>
+        </div>
+            <div class="card-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Nombres:</label>
+                        <input  [(ngModel)]="usuario.name"  name="name" type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Apellidos:</label>
+                        <input  [(ngModel)]="usuario.apellido"  name="apellido" type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Cedula:</label>
+                        <input  [(ngModel)]="usuario.cedula"  name="cedula" type="number" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Codigo:</label>
+                        <input  [(ngModel)]="usuario.codigo"  name="codigo" type="number" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password:</label>
+                        <input  [(ngModel)]="usuario.password"  name="password" type="password" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Ingenieria</label>
+                        <select [(ngModel)]="usuario.ingenieria" name="ingenieria" class="form-control">
+                            <option value="Sistemas">Sistemas</option>
+                            <option value="Mecanica">Mecanica</option>
+                            <option value="Industrial">Industrial</option>
+                            <option value="Ambiental">Ambiental</option>
+                        </select>
+                    </div>
+                    <button (click)="Guardar()" class="btn btn-danger">Guardar</button>
+                </form>
+            </div>
+    </div>
+</div>
